@@ -22,14 +22,15 @@
         <header>
             <img src="images/logo_header.png">
             <h4 class="display-4">PRESUPUESTADOR</h4>
-            <p class="font-italic mb-1">Pedir tu presupuesto es muy facil: </br> 1 | Seleccionar los servicios que te interesen </br>2 | Presionar el boton ENVIAR al final de la pagina. </br> Contestaremos lo mas pronto posible.</p>
+            <p class="font-italic mb-1">Pedir tu presupuesto es muy facil: </br> 1 | Seleccionar los servicios que te interesen </br>2 | Presionar el boton ENVIAR al final de la pagina. </p> <p>Contestaremos lo mas pronto posible.</p>
         </header>
     </div>
 </section>
 
 
 
-<form action="enviarpresupuesto.php" method="post" data-netlify="true">
+<form action="enviarpresupuesto.php" 
+>
     <div class="container">
         <div class="row">
             <div class="col-lg-7 mx-auto">
@@ -361,60 +362,26 @@
                 </div>
 
 
-                <div class="row mb-4">
-            <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Nombre">
-            </div>
-            <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Apellido">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="form-group col-12">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <input type="submit" class="btn btn-dark" value="Enviar mensaje">
-            </div>
-          </div>
-
-
-<!--
-<section class="site-section bg-primary" id="contact-section">
-      <div class="container">
-        
-        <form action="#" class="form">
-          <div class="row mb-4">
-            <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Nombre">
-            </div>
-            <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Apellido">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="form-group col-12">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <input type="submit" class="btn btn-dark" value="Enviar mensaje">
-            </div>
-          </div>
-          
-        </form>
-      </div>
-    </section>
-
-
--->
+            <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
                 
             </div>
         </div>
