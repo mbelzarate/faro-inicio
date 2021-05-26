@@ -1,0 +1,426 @@
+ <!-- Demo header-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <title>Presupuestador - faro</title>
+    <link rel="stylesheet" href="css/presupuesto-style.css">
+</head>
+
+<body>
+    <section class="py-5 header text-center text-white">
+    <div class="container pt-4">
+        <header>
+            <img src="images/logo_header.png">
+            <h4 class="display-4">PRESUPUESTADOR</h4>
+            <p class="font-italic mb-1">Pedir tu presupuesto es muy facil: </br> 1 | Seleccionar los servicios que te interesen </br>2 | Presionar el boton ENVIAR al final de la pagina. </br> Contestaremos lo mas pronto posible.</p>
+        </header>
+    </div>
+</section>
+
+
+
+<form action="enviarpresupuesto.php" method="post" data-netlify="true">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+
+
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Manejo de Redes</h2>
+                        <p class="small text-muted font-italic mb-4">Nuestros Packs:</p>
+                        <ul  class="list-group">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck1" type="checkbox" value="pack de redes iniciacion">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck1"><p class="mb-0">Iniciacion</p><span class="small font-italic text-muted">
+                                        <p>Diseño: </br>
+                                        - 9 placas para feed y 4 historias compatibles con Instagram y Facebook.</br>
+                                        - Diseño de portadas para historias destacadas y foto de perfil.
+                                        </p>
+
+                                        <p>
+                                        Community manager:</br>
+                                        - Creación y configuración de Biografía.</br>
+                                        - Análisis de audiencia (Mejores horarios de posteo, definición de target, clientes potenciales,  competencia)</br>
+                                        - Redacción y programación de contenido.</br>
+                                        - Métricas de resultados de acciones desempeñadas en el mes.</br>
+                                        - Selección de placas para realizar promociones pagas y ejecución (Opcional)</p>
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck2" type="checkbox" value="pack de redes basico">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck2"><p class="mb-0">Basico</p><span class="small font-italic text-muted">
+                                        <p>
+                                        Diseño: </br>
+                                        - 9 placas para feed y 4 historias compatibles con Instagram y Facebook.
+                                        </p>
+
+                                        <p>
+                                        Community manager:</br>
+                                        - Análisis de audiencia (Mejores horarios de posteo, definición de target, clientes potenciales,  competencia)</br>
+                                        - Redacción y programación de contenido.</br>
+                                        - Selección de placas para realizar promociones pagas y ejecución (Opcional)
+                                        </p>
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck3" type="checkbox" value="pack de redes standar">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck3"><p class="mb-0">Standar</p><span class="small font-italic text-muted">
+                                            <p>
+                                            Diseño:</br>
+                                            - 12 placas para feed y 8 historias compatibles con Instagram y Facebook (de las cuales 4 pueden ser animadas)
+                                            </p>
+
+                                            <p>
+                                            Community manager:<br>
+                                            - Análisis de audiencia (Mejores horarios de posteo, definición de target, clientes potenciales,  competencia)<br>
+                                            - Redacción y programación de contenido. <br>
+                                            - Implementación de estrategias para mejorar el engagement. (Aumentar seguidores e interacción con tu audiencia) <br>
+                                            - Métricas de resultados de acciones desempeñadas en el mes. <br>
+                                            - Selección de placas para realizar promociones pagas y ejecución (Opcional) </p>
+                                            </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck4" type="checkbox" value="pack de redes premium">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck4"><p class="mb-0">Premium</p><span class="small font-italic text-muted">
+                                            <p>
+                                            Diseño:<br>
+                                            - 16 placas para el feed y 12 historias (De las cuales 8 pueden ser animadas)
+                                            </p>
+
+                                            <p>
+                                            Community manager:<br>
+                                            - Análisis de audiencia (Mejores horarios de posteo, definición de target, clientes potenciales,  competencia)<br>
+                                            - Redacción y programación de contenido. <br>
+                                            - Implementación de estrategias para mejorar el engagement. (Aumentar seguidores e interacción con tu audiencia)<br>
+                                            - Métricas de resultados de acciones desempeñadas en el mes. <br>
+                                            - Selección de placas para realizar promociones pagas y ejecución (Opcional) </p>
+                                            </span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Identidad Visual</h2>
+                        <p class="small text-muted font-italic mb-4">Servicios de creacion de marca:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck5" type="checkbox" value="rebranding">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck5"><p class="mb-0">    
+                                        Rebranding (Rediseño de logo)
+                                        </p><span class="small font-italic text-muted">
+                                        (Reunion con el cliente, se ofrecen 2 alternativas, 2 ajuste, incluye aplicacion de color, tipografias  y variables y se entrega el archivo vectorial convertido a curvas)
+
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck6" type="checkbox" value="diseño de isologotipo">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck6"><p class="mb-0">Isologotipo</p><span class="small font-italic text-muted">
+                                            (Reunion con el cliente, se ofrecen 2 alternativas, 1 ajuste, incluye aplicacion de color, tipografias  y variables y se entrega el archivo vectorial convertido a curvas)
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck7" type="checkbox" value="manual de marca">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck7"><p class="mb-0">Manual de Marca</p><span class="small font-italic text-muted">
+                                            Se entrega  archivo en formato PDF, incluye las siguientes aspectos: <br>
+
+                                            - Logotipo y sus variantes.<br>
+                                            - Zona de protecciòn y de reducciòn mínima de logo.<br>
+                                            - Paleta de colores corporativos y  versión en negativo.<br>
+                                            - Usos incorrectos.<br>
+                                            - Familias Tipográficas.<br>
+                                            - Patrones, iconos y elementos gráficos.<br>
+                                            - Aplicación de logotipo en las distintas plataformas de comunicación.<br>
+                                            - Aplicaciòn del logo sobre fotografías.<br>
+                                            </span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1"> Identidad + Manejo de Redes Sociales</h2>
+                        <p class="small text-muted font-italic mb-4">Servicios de diseño grafico:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck8" type="checkbox" value="identidad + pack de iniciacion">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck8"><p class="mb-0">    
+                                        Pack Iniciación + diseño de Identidad Visual
+                                        </p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck9" type="checkbox" value="identidad + pack básico">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck9"><p class="mb-0">Pack Básico + diseño de Identidad Visual</p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck10" type="checkbox" value="identidad + pack standar">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck10"><p class="mb-0">Pack Standar + diseño de Identidad Visual</p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck11" type="checkbox" value="identidad + pack premium">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck11"><p class="mb-0">    
+                                        Pack Premium + diseño de Identidad Visual
+                                        </p></label>
+                                </div>
+                            </li>                                                    
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Piezas graficas</h2>
+                        <p class="small text-muted font-italic mb-4">Servicios de diseño grafico:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck12" type="checkbox" value="diseño de tarjeta personal">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck12"><p class="mb-0">    
+                                        Tarjeta Personal
+                                        </p><span class="small font-italic text-muted">
+                                        Diseño +preparación para imprenta + se ofrecen 1 alternativa, 2 ajustes se entrega el archivo en PDF Y JPG.
+
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck13" type="checkbox" value="diseño de follero A5 frente y dorso">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck13"><p class="mb-0">Folleto A5 frente y dorso</p><span class="small font-italic text-muted">
+                                             Reunión con cliente,se ofrecen 1 alternativas, 2 ajustes se entrega el archivo en PDF Y JPG
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck14" type="checkbox" value="diseño de folleto A5 solo frente">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck14"><p class="mb-0">Folleto A5 frente</p><span class="small font-italic text-muted">
+                                            Reunión con cliente,se ofrece  1 alternativas, 2 ajustes se entrega el archivo en PDF Y JPG
+                                            </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck15" type="checkbox" value="diseño de banner">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck15"><p class="mb-0">    
+                                        Banner 1,80x90 o similar
+                                        </p><span class="small font-italic text-muted">
+                                        Reunión con cliente,se ofrece  1 alternativa, 2 ajustes se entrega el archivo en PDF Y JPG.
+
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck16" type="checkbox" value="diseño de menú o carta">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck16"><p class="mb-0">Menú/Carta</p><span class="small font-italic text-muted">
+                                             Tamaño A4, doble faz, 4/4, se ofrece  1 alternativa, 2 ajustes se entrega el archivo en PDF Y JPG.
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck17" type="checkbox" value="diseño de presentacion en PDF">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck17"><p class="mb-0">Presentación en PDF</p><span class="small font-italic text-muted">
+                                            Incluye 10 diapositivas, los textos son provistos por el cliente, incluye busqueda de imagenes apropiadas para el diseño. El cliente debe enviar imágenes de referencia.
+                                            </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck18" type="checkbox" value="diseño de presentación en PowerPoint">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck18"><p class="mb-0">Presentación en Power Point</p><span class="small font-italic text-muted">
+                                             Incluye 10 diapositivas, los textos son provistos por el cliente, incluye busqueda de imagenes apropiadas para el diseño. El cliente debe enviar imágenes de referencia.
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck19" type="checkbox" value="Diseño de membretadas A4">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck19"><p class="mb-0">Membretadas A4</p><span class="small font-italic text-muted">
+                                            Incluye diseño y preparación para imprenta, se entrega archivo en pdf. En caso de incluir un logotipo el cual deberá proporcionarse en alta calidad, preferentemente vectorizado.
+                                            </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck20" type="checkbox" value="diseño de tarjeteria especial">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck20"><p class="mb-0">    
+                                        Tarjeteria Especial / Salutación Tamaño A6
+                                        </p><span class="small font-italic text-muted">
+                                        Se ofrece  1 alternativas, 2 ajustes se entrega el archivo en PDF Y JPG.
+
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck21" type="checkbox" value="diseño de brochure informativo">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck21"><p class="mb-0">Brochure informativo A4</p><span class="small font-italic text-muted">
+                                             Incluye 12 páginas, los textos son provistos por el cliente, incluye búsqueda de imágenes apropiadas para el diseño. El cliente debe enviar imágenes de referencia. Se entrega en formato PDF.
+                                        </span></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck22" type="checkbox" value="diseño de catalogo de productos">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck22"><p class="mb-0">Catálogo A4 Productos</p><span class="small font-italic text-muted">
+                                            Incluye 12 páginas, los textos e imágenes son provistos por el cliente. Se entrega en formato PDF.
+                                            </span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                
+               <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Piezas graficas</h2>
+                        <p class="small text-muted font-italic mb-4">Servicios de diseño grafico:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck23" type="checkbox" value="pack 1">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck23"><p class="mb-0">    
+                                        01.  Identidad Visual 
+                                        </p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck24" type="checkbox" value="pack 2">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck24"><p class="mb-0">02. Identidad + piezas gráficas</p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck25" type="checkbox" value="pack 3">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck25"><p class="mb-0">03. Identidad + Manejo de Redes Sociales</p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck26" type="checkbox" value="pack 4">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck26"><p class="mb-0">    
+                                        04. Manejo de Redes Sociales
+                                        </p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck27" type="checkbox" value="pack 5">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck27"><p class="mb-0">05.  Diseño Web</p></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" name="servicio[]" id="customCheck28" type="checkbox" value="pack 6">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck28"><p class="mb-0">06. Fotografía</p></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="row mb-4">
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="form-group col-12">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-dark" value="Enviar mensaje">
+            </div>
+          </div>
+
+
+<!--
+<section class="site-section bg-primary" id="contact-section">
+      <div class="container">
+        
+        <form action="#" class="form">
+          <div class="row mb-4">
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="form-group col-12">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-dark" value="Enviar mensaje">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </section>
+
+
+-->
+                
+            </div>
+        </div>
+    </div>
+</form>
+<script src="js/main.js"></script>    
+</body>
+</html>
+
