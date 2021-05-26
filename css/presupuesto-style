@@ -1,0 +1,11 @@
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+body {
+    background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
