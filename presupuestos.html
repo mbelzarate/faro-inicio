@@ -20,7 +20,7 @@
     <section class="py-5 header text-center text-white">
     <div class="container pt-4">
         <header>
-            <img src="images/logo_header.png">
+            <a href="index.html"><img src="images/logo_header.png"></a>
             <h4 class="display-4">PRESUPUESTADOR</h4>
             <p class="font-italic mb-1">Pedir tu presupuesto es muy facil: </br> 1 | Seleccionar los servicios que te interesen </br>2 | Presionar el boton ENVIAR al final de la pagina. </p> <p>Contestaremos lo mas pronto posible.</p>
         </header>
@@ -362,26 +362,23 @@
                 </div>
 
 
-            <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+
+<div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+
+<label for="cliente" >¿Cuál es tu nombre?</label>
+<input id="cliente" type="text" class="form-control" placeholder="Indica cuál es tu nombre completo">
+
+<label for="tel" >Telephone</label>
+<input class="form-control" type="tel" value="(351) 000-0000" id="example-tel-input">
+
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+
+  </div>
+</div>
                 
             </div>
         </div>
