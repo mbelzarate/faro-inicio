@@ -29,7 +29,7 @@
 
 
 
-<form action="enviarpresupuesto.php" 
+<form onsubmit = "return enviarpresupuesto();"
 >
     <div class="container">
         <div class="row">
@@ -369,13 +369,13 @@
 <label for="cliente" >¿Cuál es tu nombre?</label>
 <input id="cliente" type="text" class="form-control" placeholder="Indica cuál es tu nombre completo">
 
-<label for="tel" >Telephone</label>
-<input class="form-control" type="tel" value="(351) 000-0000" id="example-tel-input">
+</br><label for="tel" >Telephone</label>
+<input class="form-control" type="tel" value="(xxx) xxx-xxxx" id="example-tel-input">
 
 
       <div id="respuesta"></div>
 
-      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+      </br><button id="submit"  class="btn btn-dark btn-sm">Enviar a WhatsApp</button>
 
   </div>
 </div>
